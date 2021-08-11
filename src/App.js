@@ -6,10 +6,11 @@ export function App() {
 	return (
 		<ChatEngine
 			height='100vh'
+			projectID='8eee3fca-876f-4193-a32b-bbc630d7440d'
 			userName='chat admin'
 			userSecret='zxcv1234'
-			projectID='8eee3fca-876f-4193-a32b-bbc630d7440d'
-			renderChatFeed={(chatAppProps) => <ChatFeed  {... chatAppProps}/>}
+			
+			renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
 		/>
 	);
 }
