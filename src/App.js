@@ -2,7 +2,10 @@
 import './App.css';
 import {ChatEngine} from 'react-chat-engine'
 import  ChatFeed  from './components/ChatFeed';
+import LoginForm from './components/LoginForm';
+
 export function App() {
+		if(!localStorage.getItem('username')) return <LoginForm/>
 	return (
 		<ChatEngine
 			height='100vh'
